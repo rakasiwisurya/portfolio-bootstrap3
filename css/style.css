@@ -31,7 +31,6 @@ section {
 }
 
 footer {
-  overflow-x: hidden;
   position: absolute;
   bottom: 0;
   width: 100%;
