@@ -3,13 +3,8 @@ html {
 }
 
 body {
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 120px;
-}
-
-.jumbotron img {
-  width: 150px;
-  border: 5px solid #666; 
 }
 
 hr {
@@ -17,17 +12,79 @@ hr {
   border-top: 4px solid #999;
 }
 
-section {
-  min-height: 600px;
+button {
+  width: 100%;
+}
+
+.pt {
+  padding-top: 25px;
+}
+
+.pb {
+  padding-bottom: 25px;
+}
+
+.py {
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+  background-image: url('../img/header-bg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #999;
+  background-blend-mode: multiply;
+  color: #eaeaea;
+  overflow: hidden;
+}
+
+.jumbotron img {
+  width: 150px;
+  border: 5px solid #eaeaea;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron h1, .jumbotron p {
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about {
+  min-height: 350px;
+}
+
+.pLeft {
+  transform: translate(-50px, 0) rotate(15deg);
+}
+
+.pRight {
+  transform: translate(50px, 0) rotate(-15deg);
+}
+
+.about p {
+  opacity: 0;
+  transition: 1s;
+}
+
+.about p.show {
+  opacity: 1;
+  transform: translate(0,0);
 }
 
 .portfolio {
-  overflow-x: hidden;
   background-color: #eee;
 }
 
-.contact {
-  min-height: 800px;
+.portfolio .thumbnail {
+  opacity: 0;
+  transform: translate(0, -40px);
+  transition: .5s;
+}
+
+.portfolio .thumbnail.show {
+  opacity: 1;
+  transform: translate(0,0);
 }
 
 footer {
